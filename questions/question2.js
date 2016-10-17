@@ -6,11 +6,12 @@
 var object2 = {
   first: '',
   second: '',
-  concat: function() {}
+  concat: function() {
+    return object2.first + object2.second;
+  }
 }
 
 /** ================================================================================
  *  Don't touch anything below here!
  *  ================================================================================ */
 module.exports = object2;
-

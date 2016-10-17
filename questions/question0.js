@@ -16,11 +16,15 @@
  *  Example:
  *  question0('julia', 'sun'); // returns: "Hello Julia Sun!"
  *  ================================================================================ */
-var question0 = function() {};
+var question0 = function(first, last) {
+  first = first.charAt(0).toUpperCase() + first.slice(1).toLowerCase();
+  last = last.charAt(0).toUpperCase() + last.slice(1).toLowerCase();
+  return "Hello " + first + " " + last + "!";
+
+};
 
 
 /** ================================================================================
  *  Don't touch anything below here!
  *  ================================================================================ */
 module.exports = question0;
-

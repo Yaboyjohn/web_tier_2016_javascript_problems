@@ -12,7 +12,9 @@
  *  Example:
  *  question1(); // returns: "betta, greyhound, scottish fold"
 *  ================================================================================ */
-var question1 = function() {};
+var question1 = function() {
+  return object1.fish + ', ' + object1.dog + ', ' + object1.cat;
+};
 
 
 /** ================================================================================
@@ -28,4 +30,3 @@ var object1 = {
 };
 
 module.exports = question1;
-

@@ -8,7 +8,13 @@
  *  if `arr = ['dog', 'cat'];` then
  *  questions3(arr); // returns {dog: 0, cat: 1}
  *  ================================================================================ */
-var question3 = function(arr) {}
+var question3 = function(arr) {
+  var answer = {};
+  for (var i = 0; i < arr.length; i ++) {
+    answer[arr[i]] = i;
+  }
+  return answer;
+}
 
 
 /** ================================================================================
@@ -16,4 +22,3 @@ var question3 = function(arr) {}
  *  ================================================================================ */
 var exampleArr = ['dog', 'cat'];
 module.exports = question3;
-
